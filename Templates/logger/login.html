@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Base</title>
+    <!-- Latest compiled and minified CSS -->
+   
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<div id="login-box">
+		<div class="login">
+			<h1> Login </h1>
+			<form method="post" action="{% url 'logger:user_login' %}">
+				{% csrf_token %}
+          		{# A more "HTML" way of creating the login form#}
+			<input type="text" name="username" placeholder="Username"/>
+			<input type="password" name="password" placeholder="Password"/>
+			<input type="submit" name="submit-button" value="Login"/>
+			<br>
+			<br>
+			<h3>Not registered? <a href="{% url 'logger:register' %}">Create an account</a></h3>
+		</form>
+			
+		</div>
+	</div>
+
+</html>

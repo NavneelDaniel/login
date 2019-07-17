@@ -1,0 +1,31 @@
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <!-- Latest compiled and minified CSS -->
+   
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+}
+</head>
+
+  <div id="signup-box">
+          <div class="signup">
+            <h1> Sign Up </h1>
+            {% if registered %}
+              <h2>Thank you for registering!</h2>
+            {% else %}
+              <form method="post" action="{% url 'logger:register' %}">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+            <br>
+            <input type="submit" name="" value="Register"/>
+          </form>
+            {% endif %}
+
+          </div>
+    </div>
+
+
+#form enctype="multipart/form-data" method="POST"

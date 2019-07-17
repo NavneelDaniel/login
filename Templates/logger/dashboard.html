@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dashboard</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+  <div id="dashboard">
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Apartment No.</th>
+            <th>No. of Rooms</th>
+            <th>No. of Appliances</th>
+          <th>IP Address</th>
+            <th>User</th>
+            <th>Contact No.</th>
+        </tr>
+        </thead>
+        <tbody>
+    <tr>
+      <td>1</td>
+      <td>3</td>
+      <td>15</td>
+      <td>1.10.160.24</td>
+      <td>Jacob</td>
+      <td>9999999999</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4</td>
+      <td>17</td>
+      <td>12.105.5.240</td>
+      <td>Hary</td>
+      <td>8888888888</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>12</td>
+      <td>56.21.207.1</td>
+      <td>Mark</td>
+      <td>7777777777</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>16</td>
+      <td>167.34.6.78</td>
+      <td>George</td>
+      <td>6666666666</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>10</td>
+      <td>5.2.7.111</td>
+      <td>Emily</td>
+      <td>5555555555</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>5</td>
+      <td>22</td>
+      <td>198.101.16.4</td>
+      <td>Jessica</td>
+      <td>4444444444</td>
+    </tr>
+</tbody>
+</table>
+<br>
+{% if user.is_authenticated %}
+<a href="{% url 'logout' %}">Logout</a>
+{% endif %}
+  </div>
+
+</body>
+</html>

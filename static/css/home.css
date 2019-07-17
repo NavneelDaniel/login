@@ -1,0 +1,268 @@
+{% load static %}
+body
+{
+  background-image: url(aaa.png);
+  font-size: 16px;
+  color: #777;
+  font-family: sans-serif;
+  font-weight: 300;
+  background-size: auto;
+}
+
+#login-box
+{
+	background-color: white;
+	position: relative;
+	margin: 5% auto;
+	height:550px;
+	width: 300px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	text-align: center;
+	display: block;
+}
+
+#signup-box
+{
+	background-color: white;
+	position: relative;
+	margin: 5% auto;
+	height:630px;
+	width:310px;
+
+	box-shadow: 15px 15px 15px rgba(0,0,0,0.6);
+	text-align: center;
+	display: block;
+}
+#password-box
+{
+	background-color: white;
+	position: relative;
+	margin: 5% auto;
+	height:350px;
+	width: 300px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+	text-align: center;
+	display: none;
+}
+
+.login, .signup, .password
+{
+	position: absolute;
+	top:0;
+	left:3;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+	height: 400px;
+}
+
+h1
+{
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-weight: bold;
+	font-size: 36px;
+	color: #000080;
+}
+
+h2
+{
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-weight: bold;
+	font-size: 45px;
+	color: black;
+}
+
+h3
+{
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-size: 14px;
+}
+h4
+{
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-size: 30px;
+}
+
+a
+{
+	color: #900C3F;
+	cursor: pointer; 
+}
+
+input[type="text"], input[type="password"], input[type="email"]
+{
+	font-family: sans-serif;
+	outline: 1;
+	background: #CCCCFF;
+	width: 100%;
+	border: 0;
+	margin: 0 0 4px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+input[type="submit"]
+{
+	width: 100%;
+	background: #9999FF;
+	border: 0;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: 0;
+	padding: 15px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+	background: #ff5722;
+	transition: 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+	background: #ff5722;
+	transition: 0.3s ease;
+}
+
+button.facebook, button.google
+{
+
+	margin-bottom: 10px;
+	width: 160px;
+	height: 30px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+	font-weight: 500;
+	cursor: pointer;
+	border: 0;
+}
+
+
+.facebook
+{
+	background: #32508e;
+}
+
+.google
+{
+	background: #dd4b39;
+}
+
+table 
+{
+  border: 2px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+   
+tr 
+{
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+td 
+{
+  padding: .625em;
+  text-align: center;
+}
+
+th 
+{
+  font-size: 18px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .625em;
+  text-align: center;
+  background-color:#2d2d86;
+  text-align: center;
+  color: #ffffff;
+}
+
+tr:nth-child(even) 
+{
+  background: #e6e6ff;
+}
+
+tr:nth-child(odd) 
+{
+  background: white; 
+}
+
+tr:hover,
+tr:focus
+{
+  background-color: #DB7093;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#refresh
+{
+	width: 10%;
+	position: absolute;
+	right: 10;
+	border-radius: 25px
+}
+
+nav 
+{    
+  display: block;
+  text-align: center;
+}
+
+nav ul 
+{
+  margin: 0px auto;
+  padding:0;
+  list-style: none;
+
+}
+
+.nav a 
+{
+  display:block; 
+  background: #CCCCFF; 
+  color: #fff; 
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav
+{  
+  vertical-align: top; 
+  display: inline-block;
+  box-shadow: 
+    1px -1px -1px 1px #000, 
+    -1px 1px -1px 1px #fff, 
+    0 0 6px 3px #fff;
+  border-radius:6px;
+}
+
+.nav li 
+{
+  position: relative;
+  float: left;
+}
+
+li a:hover,
+li a:focus
+{
+  background: #DB7093;
+  transition: 0.3s ease;
+}

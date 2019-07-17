@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Base</title>
+    <!-- Latest compiled and minified CSS -->
+   
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+	<br>
+	<br>
+	<br>
+	<br>
+    <h1>Welcome to the Umbeo Tech !</h1>
+    {% if user.is_authenticated %}
+        <h2>Hello {{ user.username }}</h2>
+    {% else %}
+        <h2>Register or Login if you'd like to</h2>
+        <br>
+        <br>
+        <h4><a href="{% url 'logger:user_login' %}">LOGIN</a></h4>
+    {% endif %}
+
+  </div>
+</div>
+</html>
